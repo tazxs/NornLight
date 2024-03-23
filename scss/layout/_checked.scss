@@ -1,0 +1,50 @@
+@import '../scss-utils/mixin';
+.checked-section{
+    margin-bottom: 6rem;
+    .checked-text-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+        .checked-title{
+            padding: 1rem;
+            font-weight: 700;
+            font-size: 4rem;
+            color: #454545;
+        }
+        .checked-arrows{
+            width: 9rem;    
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .checked-images{
+        @include flex();
+    }
+}
+@media (max-width:360px){
+    .checked-section{
+        width: 340px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        .checked-text-wrap{
+            .checked-title{
+                font-size: 2.8rem;
+            }
+            .checked-arrows{
+                display: none;
+            }
+        }
+        .checked-images{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            row-gap: 2rem;
+            .checked-image{
+                margin: 0 auto;
+                &:last-child{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,292 @@
+@import '../parts/header.css';
+@import '../parts/main.css';
+@import '../parts/footer.css';
+@import '../hovers/aside-hover.css';
+@import '../reset.css';
+
+.aside-line {
+   width: 310px;
+   height: 2px;
+   background-color: #454545;
+   opacity: 10%;
+}
+
+.main-holder {
+   display: flex;
+}
+
+.title {
+   color: #454545;
+   font-size: 4rem;
+   font-weight: 700;
+   margin-bottom: 61px;
+}
+
+.sidebar {
+   margin-right: 1.25rem;
+   border-top: 2px solid #4545451b;
+}
+
+.price {
+   margin-bottom: 1.25rem;
+}
+
+.price-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-top: 1.25rem;
+   margin-bottom: .75rem;
+}
+
+.price-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.from-to {
+   display: flex;
+}
+
+.from-to span {
+   width: 150px;
+   height: 40px;
+
+   display: flex;
+   align-items: center;
+
+   margin-right: 10px;
+   padding-left: 1rem;
+
+   border: 1px solid #454545;
+   border-radius: 6.25rem;
+
+   color: #454545;
+   font-size: 14px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: .3s ease-out;
+}
+
+.from-to span:last-child {
+   margin-right: 0;
+}
+
+.manufacturer {
+   margin-top: 1.25rem;
+}
+
+.manufacture-title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   margin-bottom: .75rem;
+}
+
+.manufacture-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.country-manufactures {
+   display: flex;
+   flex-direction: column;
+}
+
+.aside-styles {
+   margin-top: 1.25rem;
+}
+
+.styles-title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: .75rem;
+}
+
+.styles-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.styles-column {
+   display: flex;
+   flex-direction: column;
+}
+
+.shape {
+   margin-top: 1.25rem;
+}
+
+.shape-title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: .75rem;
+}
+
+.shape-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.shape-column {
+   display: flex;
+   flex-direction: column;
+}
+
+.appointment {
+   margin-top: 1.25rem;
+}
+
+.appointment-title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: .75rem;
+}
+
+.appointment-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.appointment-column {
+   display: flex;
+   flex-direction: column;
+}
+
+.method {
+   margin-top: 1.25rem;
+}
+
+.method-title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: .75rem;
+}
+
+.method-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.method-column {
+   display: flex;
+   flex-direction: column;
+}
+
+.light-square {
+   margin-top: 1.25rem;
+   margin-bottom: 18px;
+}
+
+.square-title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: .75rem;
+}
+
+.square-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+.capacity {
+   margin-top: 1.25rem;
+   margin-bottom: 18px;
+}
+
+.capacity-title {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: .75rem;
+}
+
+.capacity-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.mass {
+   margin-top: 1.25rem;
+   margin-bottom: 18px;
+}
+
+.mass-title {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: .75rem;
+}
+
+.mass-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.contries {
+   margin-top: 1.25rem;
+}
+
+.contries-title {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: .75rem;
+}
+
+.contries-title h3 {
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.countries-column {
+   display: flex;
+   flex-direction: column;
+}
+
+input[type="checkbox"] {
+   display: none;
+}
+
+input[type="checkbox"]+label::before {
+   content: "";
+
+   display: inline-block;
+   vertical-align: middle;
+
+   width: 20px;
+   height: 20px;
+
+   background-color: #f2f2f2;
+
+   border-radius: 5px;
+   margin-right: 10px;
+}
+
+input[type="checkbox"]:checked+label::before {
+   background-image: url(/src/img/icons/check-box.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+label {
+   margin-bottom: .75rem;
+
+   color: #4545458a;
+   font-size: 14px;
+   font-weight: 600;
+   transition: .3s ease-out;
+}

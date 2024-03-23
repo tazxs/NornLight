@@ -1,0 +1,36 @@
+.top-link:hover {
+   color: #000;
+   transform: scale(1.05);
+}
+
+.tel:hover {
+   color: #000;
+   transform: scale(1.05);
+}
+
+.call:hover {
+   color: #454545;
+   transform: scale(1.05);
+}
+
+.catalog-btn:hover {
+   background-color: #313131;
+}
+
+.shopping div a:nth-child(2):hover {
+   color: #000;
+   transform: scale(1.05);
+}
+
+.nav-link:hover {
+   color: #000;
+   transform: scale(1.05);
+}
+
+.catalog-btn:hover {
+   transform: scale(1.05);
+}
+
+.logo:hover {
+   transform: translateX(5px) scale(1.1);
+}

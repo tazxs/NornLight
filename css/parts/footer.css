@@ -1,0 +1,122 @@
+@import '../hovers/footer-hover.css';
+
+.footer {
+   margin-top: 103px;
+   background-color: #f2f2f2;
+   padding: 5rem;
+}
+
+.footer-holder {
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-logo {
+   margin-bottom: 50px;
+   transition: .3s ease-out;
+}
+
+.connection {
+   display: flex;
+   flex-direction: column;
+}
+
+.number-call {
+   display: flex;
+   margin-bottom: 35px;
+
+   color: #454545;
+   font-size: 1.5rem;
+   font-weight: 600;
+   transition: .3s ease-out;
+}
+
+.card-pay {
+   display: flex;
+   margin-bottom: 35px;
+}
+
+.card-pay img {
+   transition: .3s ease-out;
+}
+
+.politic {
+   margin-bottom: 30px;
+   color: #4545458a;
+   font-weight: 600;
+   transition: .3s ease-out;
+}
+
+.terms-use {
+   margin-bottom: 35px;
+   color: #4545458a;
+   font-weight: 600;
+   transition: .3s ease-out;
+}
+
+.society img {
+   margin-right: .75rem;
+   transition: .3s ease-out;
+}
+
+.society img:last-child {
+   margin-right: 0;
+}
+
+.info-title {
+   margin-bottom: 2rem;
+
+   color: #454545;
+   font-size: 1.5rem;
+   font-weight: 700;
+   transition: .3s ease-out;
+}
+
+.footer-nav {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-link {
+   font-weight: 600;
+   color: #4545458a;
+   margin-bottom: 27px;
+   transition: .3s ease-out;
+}
+
+.goods-title {
+   margin-bottom: 2rem;
+
+   color: #454545;
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+
+.goods-holder {
+   display: flex;
+}
+
+.goods-left {
+   display: flex;
+   flex-direction: column;
+}
+
+.goods-left a {
+   color: #4545458a;
+   font-weight: 600;
+   margin-bottom: 27px;
+   margin-right: 71px;
+   transition: .3s ease-out;
+}
+
+.goods-right {
+   display: flex;
+   flex-direction: column;
+}
+
+.goods-right a {
+   color: #4545458a;
+   font-weight: 600;
+   margin-bottom: 27px;
+   transition: .3s ease-out;
+}

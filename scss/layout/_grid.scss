@@ -1,0 +1,11 @@
+@mixin twoColum(){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.7rem;
+}
+@mixin threeColum(){
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2.3rem;
+        row-gap: 2rem;
+}

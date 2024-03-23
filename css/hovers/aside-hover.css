@@ -1,0 +1,17 @@
+.card:hover {
+   transform: translateY(-0.85rem) scale(.98) rotate(0.75deg);
+}
+
+.from-to span:hover {
+   color: #fff;
+   background-color: #454545;
+}
+
+label:hover {
+   color: #000;
+}
+
+.from_to span:hover {
+   color: #fff;
+   background-color: #454545;
+}

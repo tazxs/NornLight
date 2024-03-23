@@ -1,0 +1,37 @@
+@import '../scss-utils/mixin';
+.production-section{
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    .production-title{
+        font-weight: 700;
+        font-size: 4rem;
+        color: #454545;
+        width: 33rem;
+    }
+    .production-text{
+        width: 64rem;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 150%;
+        color: #454545;
+    }
+}
+@media (max-width:360px) {
+    .production-section{
+        width: 340px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 4rem;
+        .production-title{
+            padding: 1rem;
+            font-size: 2.8rem;
+        }
+        .production-text{
+            padding: 1rem;
+            width: 325px;
+        }
+    }
+}

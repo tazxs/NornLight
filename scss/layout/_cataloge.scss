@@ -1,0 +1,93 @@
+@import "../scss-utils/mixin";
+@import "../components/btn";
+@import "../scss-utils/variables";
+@import "../base/animation";
+@import "../components/card";
+@import "./grid";
+.cataloge-section {
+    margin-bottom: 7rem;
+    .cataloge-text-wrap {
+        padding: 1rem;
+        margin-bottom: 2rem;
+        @include flex();
+        .cataloge-title {
+            @include maxtitle();
+        }
+        .cataloge-button {
+            .cataloge-btn {
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: #454545;
+                border: 1px solid #454545;
+                border-radius: 10rem;
+                width: 22rem;
+                height: 5rem;
+                padding: 1.5rem 6rem;
+                &:hover{
+                    background-color: #454545;
+                    color: #fff;
+                }
+                transition: .3s;
+            }
+        }
+    }
+    .cataloge-cards {
+        @include threeColum();
+        margin-bottom: 2rem;
+        .cataloge-card {
+            @include cataloge-card();
+        }
+    }
+    .cataloge-cards__bottom {
+        @include twoColum();
+        .cataloge-card-2 {
+            @include cataloge-card2();
+        }
+    }
+}
+@media (max-width: 360px) {
+    .cataloge-section {
+        margin-bottom: 2rem;
+        width: 340px;
+        margin: 0 auto;
+        .cataloge-text-wrap {
+            .cataloge-title {
+                font-size: 2.4rem;
+            }
+            .cataloge-button {
+                display: none;
+            }
+        }
+        .cataloge-cards {
+            grid-template-columns: repeat(2, 1fr);
+            .cataloge-card {
+                display: flex;
+                align-items: center;
+                border-radius: 2rem;
+                width: 15.5rem;
+                &:last-child {
+                    display: none;
+                }
+                .cataloge-card-text-wrap {
+                    margin-bottom: 0rem;
+                    .cataloge-card-title {
+                        font-size: 1rem;
+                        margin-bottom: 10rem;
+                    }
+                    .cataloge-card-text {
+                        font-size: 1.4rem;
+                    }
+                }
+                .cataloge-card-image {
+                    .cataloge-card-img {
+                        width: 7.1rem;
+                        height: 8.2rem;
+                    }
+                }
+            }
+        }
+        .cataloge-cards__bottom {
+            display: none;
+        }
+    }
+}

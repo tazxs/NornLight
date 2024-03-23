@@ -1,0 +1,117 @@
+@import "../scss-utils/mixin";
+@import "../components/btn";
+@import "../scss-utils/variables";
+.popularity-section {
+    margin-bottom: 6rem;
+    .popularity-text-wrap {
+        @include flex();
+        margin-bottom: 2rem;
+        .popularity-title {
+            @include maxtitle();
+        }
+        .popularity-button {
+            .popularity-btn {
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: #454545;
+                border: 1px solid #454545;
+                border-radius: 10rem;
+                width: 22rem;
+                height: 5rem;
+                padding: 1.5rem 6rem;
+                &:hover{
+                    background-color: #454545;
+                    color: #fff;
+                }
+                transition: .3s;
+            }
+        }
+    }
+    .popular-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .popular-card {
+            padding: 2.5rem;
+            width: 32.6rem;
+            .popular-image {
+                width: 17rem;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
+            .popular-card-title {
+                width: 22.7rem;
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 110%;
+                color: $grayColor2;
+                margin-bottom: 2rem;
+            }
+            .popular-cost-line {
+                @include flex();
+                .card-cost-image {
+                    .fa-cart-shopping {
+                        font-size: $fzXXL;
+                        color: gray;
+                        transition: 0.3s ease-in-out;
+                        padding: 0.5rem 1.5rem;
+                        background-color: $grayColor2;
+                        border-radius: 1rem;
+                        &:hover {
+                            color: orange;
+                            background-color: orangered;
+                        }
+                    }
+                }
+                .card-cost-wrap {
+                    .card-cost-text {
+                        font-weight: 500;
+                        font-size: 1.2rem;
+                        line-height: 110%;
+                        color: #9f9f9f;
+                        text-decoration: line-through;
+                    }
+                    .card-cost-text2 {
+                        font-weight: 700;
+                        font-size: $fzXXL;
+                        line-height: 110%;
+                        color: $grayColor2;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .popularity-section {
+        width: 340px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        .popularity-text-wrap {
+            margin-bottom: 2rem;
+            .popularity-title {
+                font-size: 2.8rem;
+            }
+            .popularity-button {
+                display: none;
+            }
+        }
+        .popular-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .popular-card {
+                padding: 1rem;
+                width: 16rem;
+                .popular-image {
+                    .popular-img {
+                        width: 9.6rem;
+                        height: 12.6rem;
+                    }
+                }
+                .popular-card-title {
+                    width: 11.5rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

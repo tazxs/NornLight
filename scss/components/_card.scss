@@ -1,0 +1,65 @@
+@mixin cataloge-card() {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 2rem;
+    width: 42rem;
+    padding: 3rem;
+    background-color: #f2f2f2;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    animation: entryAnimation 1.5s ease-out;
+    .cataloge-card-text-wrap {
+        .cataloge-card-title {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 110%;
+            color: $grayColor2;
+            margin-bottom: 14rem;
+        }
+        .cataloge-card-text {
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 110%;
+            color: $grayColor2;
+        }
+    }
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+    &:active {
+        animation: activeAnimation 0.2s ease forwards;
+    }
+}
+@mixin cataloge-card2{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+    width: 64rem;
+    background-color: #f2f2f2;
+    padding: 3rem;
+    .cataloge-card-text-wrap {
+        .cataloge-card-title {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 110%;
+            color: $grayColor2;
+            margin-bottom: 14rem;
+        }
+        .cataloge-card-text {
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 110%;
+            color: $grayColor2;
+        }
+    }
+    transition: $transition;
+    &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+    &:active {
+        animation: activeAnimation 0.2s ease forwards;
+    }
+}

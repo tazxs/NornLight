@@ -1,0 +1,33 @@
+.footer-logo:hover {
+   transform: translateY(-3px) scale(1.1);
+}
+
+.number-call:hover {
+   transform: translateY(-3px) scale(1.1);
+}
+
+.card-pay img:hover {
+   transform: translateY(-3px) scale(1.1);
+}
+
+.politic:hover,
+.terms-use:hover {
+   color: #000;
+   transform: scale(1.1);
+}
+
+.goods-left a:hover {
+   color: #000;
+}
+
+.goods-right a:hover {
+   color: #000;
+}
+
+.footer-link:hover {
+   color: #000;
+}
+
+.society img:hover {
+   transform: scale(1.1);
+}

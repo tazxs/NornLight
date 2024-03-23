@@ -1,0 +1,89 @@
+@import '../reset.css';
+
+.cards {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.card {
+   width: 316px;
+   height: 408px;
+   margin-right: 3px;
+   margin-bottom: 2px;
+   padding: 0 1.25rem;
+   transition: .3s ease-out;
+}
+
+.card-title {
+   max-width: 227px;
+   color: #454545;
+   font-size: 1.25rem;
+   font-weight: 500;
+   margin-top: 2rem;
+   margin-bottom: 30px;
+}
+
+.paying {
+   display: flex;
+   justify-content: space-between;
+}
+
+.prices {
+   display: flex;
+   flex-direction: column;
+}
+
+.original-price {
+   font-size: .75rem;
+   font-weight: 500;
+   color: #4545458a;
+   text-decoration: line-through;
+   margin-bottom: 6px;
+}
+
+.discount {
+   font-size: 1.25rem;
+   font-weight: 700;
+   color: #454545;
+}
+
+.card-button {
+   display: flex;
+   align-items: center;
+}
+
+.card-btn {
+   display: flex;
+   align-items: center;
+   padding: 6px 19px;
+   background-color: #454545;
+   border-radius: 6.25rem;
+}
+
+.card-btn img {
+   width: 16px;
+}
+
+.production-lamps {
+   margin-top: 7.5rem;
+}
+
+.section-holder {
+   display: flex;
+   justify-content: space-between;
+}
+
+.subtitle {
+   max-width: 330px;
+   color: #454545;
+   font-size: 2.5rem;
+   font-weight: 700;
+}
+
+.store-nornlight {
+   max-width: 640px;
+   line-height: 30px;
+   font-size: 1.25rem;
+   font-weight: 500;
+   color: #454545;
+}

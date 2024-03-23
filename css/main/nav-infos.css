@@ -1,0 +1,191 @@
+@import '../hovers/hover.css';
+@import '../reset.css';
+
+body {
+   font-family: 'Manrope', sans-serif;
+}
+
+.container {
+   width: 1301px;
+   margin: 0 auto;
+}
+
+.characteristics-line {
+   width: 137px;
+   height: 2px;
+   background-color: #454545;
+   position: absolute;
+   left: 27rem;
+}
+
+.video-line {
+   width: 49px;
+   height: 2px;
+   background-color: #454545;
+   position: absolute;
+   left: 39rem;
+}
+
+.galery-line {
+   width: 70px;
+   height: 2px;
+   background-color: #454545;
+   position: absolute;
+   left: 45.6em;
+}
+
+.inactive-line {
+   position: absolute;
+   width: 1300px;
+   height: 2px;
+   background-color: #4545452d;
+}
+
+.chandelier-nav {
+   display: flex;
+   margin-top: 6.25rem;
+}
+
+.link {
+   color: #4545458a;
+   font-weight: 500;
+   transition: .3s ease-out;
+
+   margin-right: 3.75rem;
+   margin-bottom: 1.25rem;
+}
+
+.active-link {
+   color: #454545;
+   font-weight: 500;
+
+   margin-right: 3.75rem;
+}
+
+.info {
+   margin-top: 3.75rem;
+}
+
+.charcs {
+   margin-top: 3.75rem;
+}
+
+.variant-set {
+   display: flex;
+   margin-bottom: 3.75rem;
+}
+
+.variant-set span:nth-child(1) {
+   color: #454545;
+   font-weight: 500;
+   opacity: 50%;
+   margin-right: 7.25rem;
+}
+
+.variant-set span:nth-child(2) {
+   color: #454545;
+   font-weight: 500;
+}
+
+.supply-voltage {
+   display: flex;
+   margin-bottom: 3.75rem;
+}
+
+.supply-voltage span:nth-child(1) {
+   color: #454545;
+   font-weight: 500;
+   opacity: 50%;
+   margin-right: 6.25rem;
+}
+
+.supply-voltage span:nth-child(2) {
+   color: #454545;
+   font-weight: 500;
+}
+
+.kilo {
+   display: flex;
+   margin-bottom: 3.75rem;
+}
+
+.kilo span:nth-child(1) {
+   color: #454545;
+   font-weight: 500;
+   opacity: 50%;
+   margin-right: 191px;
+}
+
+.kilo span:nth-child(2) {
+   color: #454545;
+   font-weight: 500;
+}
+
+.degree-protection {
+   display: flex;
+   margin-bottom: 3.75rem;
+}
+
+.degree-protection span:nth-child(1) {
+   color: #454545;
+   font-weight: 500;
+   opacity: 50%;
+   margin-right: 8.5rem;
+}
+
+.degree-protection span:nth-child(2) {
+   color: #454545;
+   font-weight: 500;
+}
+
+.gabarits {
+   display: flex;
+   margin-bottom: 15.25rem;
+}
+
+.gabarits span:nth-child(1) {
+   color: #454545;
+   font-weight: 500;
+   opacity: 50%;
+   margin-right: 10rem;
+}
+
+.gabarits span:nth-child(2) {
+   color: #454545;
+   font-weight: 500;
+}
+
+.section-video {
+   margin-bottom: 15.25rem;
+}
+
+.video {
+   margin-top: 3.75rem;
+   position: relative;
+}
+
+.video::after {
+   content: '';
+
+   width: 80px;
+   height: 80px;
+
+   position: absolute;
+   left: 47%;
+   top: 46%;
+
+   background-image: url(../img/images/video-btn.png);
+   background-repeat: no-repeat;
+}
+
+.galery {
+   margin-top: 3.75rem;
+   margin-bottom: 183px;
+}
+
+.galery-row {
+   display: flex;
+   justify-content: space-between;
+
+   margin-top: 3.75rem;
+}

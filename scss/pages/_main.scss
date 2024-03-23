@@ -1,0 +1,17 @@
+@import '../scss-utils/mixin';
+@import '../layout/cataloge';
+@import '../layout/advantage';
+@import '../layout/popularity';
+@import '../layout/checked';
+@import '../layout/blog';
+@import '../layout/production';
+.main{
+    width: 1300px;
+    margin: 0 auto;
+}
+@media (max-width:360px){
+    .main{
+        width: 350px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,17 @@
+
+@mixin flex(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin mintxt(){
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #454545;
+}
+@mixin maxtitle(){
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #454545;
+}

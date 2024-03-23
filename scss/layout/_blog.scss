@@ -1,0 +1,98 @@
+@import "../scss-utils/mixin";
+@import "../components/btn";
+@import "../scss-utils/variables";
+.blog-section {
+    margin-bottom: 6rem;
+    .blog-text-wrap {
+        @include flex();
+        margin-bottom: 3rem;
+        .blog-title {
+            font-weight: 700;
+            font-size: 4rem;
+            color: $grayColor2;
+        }
+        .blog-button {
+            .blog-btn {
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: $grayColor2;
+                border: 1px solid $grayColor2;
+                border-radius: 10rem;
+                width: 22rem;
+                height: 5rem;
+                padding: 1.5rem 6rem;
+                transition: $transition;
+                &:hover {
+                    background-color: $grayColor2;
+                    color: #fff;
+                }
+                transition: 0.3s;
+            }
+        }
+    }
+    .blog-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+        .blog-card {
+            width: 42rem;
+            .blog-card-image {
+                margin-bottom: 2rem;
+            }
+            .blog-card-title-line {
+                padding: 0rem 1rem;
+                @include flex();
+                .blog-card-title {
+                    width: 30rem;
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 130%;
+                    color: $grayColor2;
+                }
+            }
+            .blog-card-date {
+                font-weight: 500;
+                font-size: 1.4rem;
+                line-height: 110%;
+                color: #454545;
+                padding: 2rem 1rem;
+            }
+        }
+    }
+}
+@media (max-width: 360px) {
+    .blog-section {
+        width: 340px;
+        margin: 0 auto;
+        .blog-text-wrap {
+            padding: 1rem;
+            .blog-title {
+                font-size: 2.8rem;
+            }
+            .blog-button {
+                display: none;
+            }
+        }
+        .blog-cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            .blog-card {
+                width: 32.8rem;
+                margin: 0 auto;
+                .blog-card-image {
+                    width: 32.8rem;
+                    .blog-card-img {
+                        width: 32.8rem;
+                        height: 27.4rem;
+                    }
+                }
+                .blog-card-title-line {
+                    width: 30rem;
+                    .blog-card-title {
+                        margin-right: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
